@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch a Sketch</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link
+            rel="icon"
+            href="assets/logo/favicon-32x32.png"
+            type="image/x-icon"
+        />
 </head>
 <body>
     <div class="nav">Etch a Sketch</div>
@@ -17,10 +22,11 @@
         <div class="container"></div>
         <div class="tools">
             <h1>Tools</h1>
-            <button onclick="useErase()">Erase</button>
-            <button onclick="useRainbow()">Rainbow</button>
-            <button onclick="useSingle()">Single Color</button>
-            <button onclick="reset()">Reset</button>
+            <button onclick="useErase()" id="btnErase">Erase</button>
+            <button onclick="useRainbow()" id="btnRainbow">Rainbow</button>
+            <button onclick="useSingle()" id="btnSingle">Single Color</button>
+            <button onclick="reset()" id="btnReset">Reset</button>
+            <button onclick="activateSound()" id="btnSound">Sound</button>
         </div>
     </div> 
     <div class="footer">Made with 💜 by <a href="https://github.com/shehap-ahmed">Horus-jr</a> 2024</div>
